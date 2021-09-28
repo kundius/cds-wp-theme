@@ -1,0 +1,224 @@
+.header {
+  // position: absolute;
+  z-index: 200;
+  // top: 0;
+  // left: 0;
+  width: 100%;
+  border-bottom: 1px solid #bdbdbd;
+  &.header_transparent {
+    border-bottom-color: transparent;
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 52px;
+  padding-left: 28px;
+}
+
+.header-presence {
+  display: flex;
+  align-items: center;
+}
+
+.header-presence__logo-and-address {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-presence__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-presence__logo-text {
+  font-size: 36.69px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 0.005em;
+  .header_transparent & {
+    color: rgb(255, 255, 255);
+  }
+}
+
+.header-presence__address {
+  font-size: 11px;
+  color: #131313;
+  line-height: 1;
+  .header_transparent & {
+    color: #fff;
+  }
+}
+
+.header-presence__slogan-and-time {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgba(180, 183, 194, 0.54);
+  padding-left: 8px;
+  margin-left: 4px;
+}
+
+.header-presence__slogan {
+  color: #1f1f1f;
+  font-size: 14px;
+  line-height: 1.25;
+  opacity: 0.77;
+  .header_transparent & {
+    color: #fff;
+  }
+}
+
+.header-presence__time {
+  font-size: 11px;
+  color: #191919;
+  line-height: 1;
+  .header_transparent & {
+    color: #fff;
+  }
+}
+
+.header-menu {
+
+}
+
+.header-menu > ul {
+  display: flex;
+}
+
+.header-menu > ul > li {
+  margin: 0 30px;
+}
+
+.header-menu > ul > li > a {
+  font-weight: bold;
+  font-size: 24px;
+  color: #000;
+  line-height: 44px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.header-menu > ul > li.menu-item-has-children > a {
+  padding-right: 16px;
+}
+
+.header-menu > ul > li.menu-item-has-children > a::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  border-bottom: 3px solid #d5d5d5;
+  border-left: 3px solid #d5d5d5;
+  transition: .2s ease-in-out;
+  transition-property: border-bottom-color, border-left-color;
+}
+
+.header-menu > ul > li.menu-item-has-children:hover > a::after {
+  border-bottom-color: #000000;
+  border-left-color: #000000;
+}
+
+.header-menu > ul > li > a::before {
+  content: '';
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: scale(0) translateX(-50%);
+  transform-origin: 0 50%;
+  background: #ff144d;
+  width: 40px;
+  transition: transform .2s ease-in-out;
+}
+
+.header-menu > ul > li > a:hover::before {
+  transform: scale(1) translateX(-50%);
+}
+
+.header-menu > ul > li > ul {
+  display: none;
+}
+
+.header-menu > ul > li > ul > li {
+
+}
+
+.header-menu > ul > li > ul > li > a {
+
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts__phones_and_email {
+  display: flex;
+  flex-direction: column;
+  margin-right: 28px;
+}
+
+.header-contacts__phones {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-contacts__phone {
+  color: #000;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.025em;
+}
+
+.header-contacts__email {
+  font-size: 11px;
+  line-height: 1;
+  color: #000;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.22em;
+}
+
+.header-contacts__email svg {
+  fill: #868686;
+  margin-right: 8px;
+  margin-left: 3px;
+}
+
+.header-contacts__email span {
+  text-decoration: underline;
+}
+
+.header-contacts__callback {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  background: #ff144d;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease-in;
+  transition-property: background-color, box-shadow;
+}
+
+.header-contacts__callback svg {
+  fill: #ffffff;
+}
+
+.header-contacts__callback:hover {
+  background-color: rgb(229, 18, 69);
+  box-shadow: 1.871px 8.803px 16px 0px rgba(255, 20, 77, 0.5);  
+}
