@@ -12,20 +12,20 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const environment = require('./configuration/environment');
 
-const templateFiles = fs.readdirSync(environment.paths.source)
+const templateFiles = fs.readdirSync(path.resolve(environment.paths.source, 'html'))
   .filter((file) => path.extname(file).toLowerCase() === '.html');
 
 const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin({
   inject: true,
   hash: false,
   filename: template,
-  template: path.resolve(environment.paths.source, template),
+  template: path.resolve(environment.paths.source, 'html', template),
   favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
 }));
 
 module.exports = {
   entry: {
-    app: path.resolve(environment.paths.source, 'js', 'app.js'),
+    app: path.resolve(environment.paths.source, 'index.js'),
   },
   output: {
     filename: 'js/[name].js',
@@ -57,13 +57,13 @@ module.exports = {
       {
         test: /\.(eot|ttf|woff|woff2)$/,
         type: 'asset',
-        parser: {
-          dataUrlCondition: {
-            maxSize: environment.limits.images,
-          },
-        },
+        // parser: {
+        //   dataUrlCondition: {
+        //     maxSize: environment.limits.images,
+        //   },
+        // },
         generator: {
-          filename: 'images/design/[name].[hash:6][ext]',
+          filename: 'fonts/[name].[hash:6][ext]',
         },
       },
     ],
