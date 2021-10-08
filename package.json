@@ -65,6 +65,7 @@
   },
   "target": "web",
   "dependencies": {
+    "micromodal": "^0.4.6",
     "normalize.css": "^8.0.1"
   }
 }

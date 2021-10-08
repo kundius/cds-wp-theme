@@ -1,9 +1,10 @@
 /* CSS */
 import 'normalize.css'
-import './css/fonts.css'
-import './css/common.css'
-import './css/header.css'
-import './css/home.css'
+import './scss/fonts.scss'
+import './scss/common.scss'
+import './scss/header.scss'
+import './scss/home.scss'
+import './scss/modal.scss'
 
 /* JS */
-import './js/demo.js'
+import './js/modal.js'
