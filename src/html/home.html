@@ -9,9 +9,100 @@
     <meta name="author" content="DomenART" />
   </head>
   <body>
-    <header class="header header_transparent header_float">
+    <div class="drawer">
+      <button class="drawer__close js-drawer-toggle"></button>
+      
+      <div class="drawer__container">
+        <div class="drawer__header">
+          <div class="drawer__logo-and-address">
+            <a href="/" class="drawer__logo">
+              <img
+                src="./images/content/logo.png"
+                alt=""
+                class="drawer__logo-image"
+              />
+              <span class="drawer__logo-text">ООО «ЦДС»</span>
+            </a>
+            <div class="drawer__address">
+              Воронеж, ул. Сакко и Ванцетти, д. 96, оф.2
+            </div>
+          </div>
+
+          <a href="tel:" class="drawer__callback js-header-callback">
+            <svg width="19px" height="20px" viewBox="0 0 19 20">
+              <path fill-rule="evenodd" d="M5.578,14.311 C3.299,12.119 0.118,7.370 1.24,3.822 C2.591,-1.32 4.879,1.141 7.133,3.806 C8.620,5.563 6.525,6.304 5.318,7.174 C3.315,9.480 10.410,16.574 12.715,14.571 C13.585,13.365 14.326,11.269 16.84,12.756 C18.748,15.10 20.923,17.298 16.66,18.865 C12.520,20.8 7.771,16.591 5.578,14.311 L5.578,14.311 Z" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="drawer__body">
+          <ul class="drawer__menu">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">О нас</a>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Услуги</a>
+              <ul>
+                <li>
+                  <a href="#">Оформление Разрешений</a>
+                  <ul>
+                    <li>
+                      <a href="#">Что такое НГ и ТГ</a>
+                    </li>
+                    <li>
+                      <a href="#">Сбор и проверка комплекта документов</a>
+                    </li>
+                    <li>
+                      <a href="#">Разработка маршрута</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Сбор согласований</a>
+                </li>
+                <li>
+                  <a href="#">Организация сопровождения грузов</a>
+                  <ul>
+                    <li>
+                      <a href="#"
+                        >Оформление проекта организации дорожного движения</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Обследование маршрута</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Законодательство</a>
+            </li>
+            <li>
+              <a href="#">Карта ограничений</a>
+            </li>
+          </ul>
+
+          <div class="drawer__contacts">
+            <div class="drawer__phones">
+              <a href="#">+7 (473) 255-34-46</a>
+              <a href="#">+7 (473) 255-34-49</a>
+            </div>
+            <div class="drawer__time">
+              Пн-Пт: с 9:00 до 18:00<br />
+              Перерыв 13:00 - 14:00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header header_intro">
       <div class="header__container">
-        <button class="header-toggle">
+        <button class="header-toggle js-drawer-toggle">
           <span></span><span></span><span></span>
         </button>
 
@@ -49,13 +140,13 @@
             <li>
               <a href="#">Главная</a>
             </li>
-            <li class="menu-item-has-children">
+            <li>
               <a href="#">О нас</a>
             </li>
             <li class="menu-item-has-children">
               <a href="#">Услуги</a>
               <ul>
-                <li>
+                <li class="menu-item-has-children">
                   <a href="#">Оформление Разрешений</a>
                   <ul>
                     <li>
@@ -72,7 +163,7 @@
                 <li>
                   <a href="#">Сбор согласований</a>
                 </li>
-                <li>
+                <li class="menu-item-has-children">
                   <a href="#">Организация сопровождения грузов</a>
                   <ul>
                     <li>
@@ -619,7 +710,7 @@
       </div>
     </section>
 
-    <section class="contacts-section">
+    <section class="contacts-section contacts-section_with-map">
       <div class="ui-container">
         <div class="contacts-section__grid">
           <div class="contacts-section__grid-cell">
