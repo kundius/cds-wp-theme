@@ -1,0 +1,216 @@
+@import 'variables';
+
+.about-guarantee {
+  padding-top: 64px;
+  padding-bottom: 35px;
+  @media (max-width: $breakpoint-xsmall-max) {
+    padding-top: 48px;
+    padding-bottom: 28px;
+  }
+}
+
+.about-guarantee__title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #595959;
+  margin-bottom: 70px;
+  line-height: 1;
+  margin-bottom: 55px;
+  @media (max-width: $breakpoint-xsmall-max) {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.about-guarantee__grid {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+  @media (max-width: $breakpoint-small-max) {
+    flex-wrap: wrap;
+    margin-left: -20px;;
+    margin-top: -20px;
+  }
+}
+
+.about-guarantee__grid-cell {
+  padding-left: 30px;
+  padding-top: 30px;
+  @media (max-width: $breakpoint-small-max) {
+    padding-left: 20px;;
+    padding-top: 20px;
+    width: 50%;
+  }
+}
+
+.about-time {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 60px 0 48px;
+  @media (max-width: $breakpoint-xsmall-max) {
+    margin: 32px 0;
+  }
+  &::before {
+    content: '';
+    width: 150px;
+    height: 1px;
+    background: #595959;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  &::after {
+    content: '';
+    width: 150px;
+    height: 1px;
+    background: #595959;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 10;
+  }
+}
+
+.about-time__text {
+  font-size: 42px;
+  font-weight: 700;
+  color: #595959;
+  padding: 0 15px;
+  background: #fff;
+  position: relative;
+  z-index: 20;
+  @media (max-width: $breakpoint-small-max) {
+    font-size: 32px;
+  }
+  @media (max-width: $breakpoint-xsmall-max) {
+    padding: 0 5px;
+    font-size: 20px;
+  }
+}
+
+.about-time__value {
+  font-weight: 800;
+  color: #2d3f81;
+  font-size: 122px;
+  padding: 0 15px;
+  background: #fff;
+  position: relative;
+  z-index: 20;
+  top: -8px;
+  @media (max-width: $breakpoint-small-max) {
+    font-size: 80px;
+  }
+  @media (max-width: $breakpoint-xsmall-max) {
+    padding: 0 5px;
+    top: -4px;
+    font-size: 40px;
+  }
+}
+
+.about-doing {
+  background: #f4f4f4;
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  @media (max-width: $breakpoint-xsmall-max) {
+    margin: 0 -10px;
+  }
+}
+
+.about-doing__left {
+  width: 50%;
+  background: url('../images/design/about-content.jpg') no-repeat 0 100%;
+  background-size: contain;
+  @media (max-width: $breakpoint-small-max) {
+    width: 100%;
+    height: 320px;
+    background-position: 50% 100%;
+    order: 1;
+  }
+  @media (max-width: $breakpoint-xsmall-max) {
+    height: 200px;
+  }
+}
+
+.about-doing__right {
+  width: 50%;
+  padding: 58px 14px 42px;
+  @media (max-width: $breakpoint-small-max) {
+    width: 100%;
+    padding: 25px;
+  }
+  @media (max-width: $breakpoint-xsmall-max) {
+    padding: 20px;
+  }
+}
+
+.about-doing__title {
+  font-size: 42px;
+  color: #595959;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 50px;
+  @media (max-width: $breakpoint-xsmall-max) {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+.about-doing__list {
+  margin: 0 3px;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #222;
+  font-weight: 700;
+  @media (max-width: $breakpoint-xsmall-max) {
+    margin: 0;
+  }
+  li {
+    position: relative;
+    padding-left: 42px;
+    margin: 24px 0;
+    @media (max-width: $breakpoint-xsmall-max) {
+      padding-left: 30px;
+      margin: 20px 0;
+    }
+    &::before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      background: #325bf4;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: -6px;
+      @media (max-width: $breakpoint-xsmall-max) {
+        width: 20px;
+        height: 20px;
+        left: 0;
+        top: -1px;
+      }
+    }
+    &::after {
+      content: '';
+      width: 16px;
+      height: 8px;
+      border-left: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      transform: rotate(-45deg);
+      position: absolute;
+      left: 8px;
+      top: 4px;
+      @media (max-width: $breakpoint-xsmall-max) {
+        width: 12px;
+        height: 6px;
+        left: 5px;
+        top: 5px;
+      }
+    }
+  }
+}

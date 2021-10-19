@@ -1,0 +1,38 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.pagination .page-numbers {
+  margin: 6px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: #939393;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.pagination .page-numbers:hover {
+  color: #1d1e21;
+  text-decoration: underline;
+}
+
+.pagination .page-numbers.current {
+  font-size: 26px;
+  background: #23305c;
+  color: #fff;
+}
+
+.pagination .page-numbers.dots:hover {
+  color: #939393;
+  text-decoration: none;
+}
