@@ -1,9 +1,4 @@
-import MicroModal from 'micromodal'
-
-MicroModal.init({
-  awaitOpenAnimation: true,
-  awaitCloseAnimation: true
-})
+import MicroModal from './micromodal'
 
 const callOrModalButtons = document.querySelectorAll('.js-call-or-modal')
 if (callOrModalButtons.length) {

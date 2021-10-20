@@ -9,9 +9,11 @@ import './scss/about.scss'
 import './scss/modal.scss'
 import './scss/pagination.scss'
 import './scss/accordion.scss'
+import './scss/projects.scss'
 
 /* JS */
 import './js/modal.js'
 import './js/drawer.js'
 import './js/header.js'
 import './js/accordion.js'
+import './js/projects.js'

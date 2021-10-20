@@ -32,6 +32,11 @@
   color: #fff;
 }
 
+.pagination .page-numbers.current:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
 .pagination .page-numbers.dots:hover {
   color: #939393;
   text-decoration: none;

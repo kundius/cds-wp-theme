@@ -1,3 +1,5 @@
+@import 'variables';
+
 .modal__overlay {
   position: fixed;
   top: 0;
@@ -11,6 +13,44 @@
   align-items: center;
 }
 
+.modal__loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, .4);
+}
+
+.modal__loader::before {
+  content: '';
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  font-size: 10px;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(36, 49, 94, 0.6);
+  border-right: 1.1em solid rgba(36, 49, 94, 0.6);
+  border-bottom: 1.1em solid rgba(36, 49, 94, 0.6);
+  border-left: 1.1em solid #ffffff;
+  transform: translateZ(0);
+  animation: load8 1.1s infinite linear;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .modal__container {
   border-width: 1px solid rgb(195, 198, 208);
   background-color: rgb(255, 255, 255);
@@ -19,15 +59,25 @@
   width: 455px;
   max-width: calc(100% - 32px);
   max-height: calc(100% - 32px);
-  overflow-y: auto;
   box-sizing: border-box;
-  /* @include below(medium) {
-    padding: 40px;
-    width: 400px;
+  position: relative;
+  overflow: auto;
+  @media (max-width: $breakpoint-xsmall-max) {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
   }
-  @include below(small) {
-    padding: 24px;
-  } */
+  .modal_project & {
+    width: 1600px;
+    padding: 70px 50px;
+    border-radius: 12px;
+    @media (max-width: $breakpoint-xsmall-max) {
+      padding: 20px;
+      border-radius: 0;
+    }
+  }
 }
 
 .modal__close {

@@ -48,25 +48,23 @@ Template Name: О нас
 
         <?php if ($guarantee = get_field('guarantee', 'options')): ?>
         <section class="about-guarantee">
-          <div class="ui-container">
-            <div class="about-guarantee__title">Наши гарантии</div>
-            <div class="about-guarantee__grid">
-              <?php foreach ($guarantee as $row): ?>
-              <div class="about-guarantee__grid-cell">
-                <div class="card-secondary">
-                  <div class="card-secondary__image">
-                    <?php echo $row['icon'] ?>
-                  </div>
-                  <div class="card-secondary__title">
-                    <?php echo $row['title'] ?>
-                  </div>
-                  <div class="card-secondary__desc">
-                    <?php echo $row['description'] ?>
-                  </div>
+          <div class="about-guarantee__title">Наши гарантии</div>
+          <div class="about-guarantee__grid">
+            <?php foreach ($guarantee as $row): ?>
+            <div class="about-guarantee__grid-cell">
+              <div class="card-secondary">
+                <div class="card-secondary__image">
+                  <?php echo $row['icon'] ?>
+                </div>
+                <div class="card-secondary__title">
+                  <?php echo $row['title'] ?>
+                </div>
+                <div class="card-secondary__desc">
+                  <?php echo $row['description'] ?>
                 </div>
               </div>
-              <?php endforeach; ?>
             </div>
+            <?php endforeach; ?>
           </div>
         </section>
         <?php endif; ?>

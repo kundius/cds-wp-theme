@@ -68,5 +68,5 @@
   </div>
 </div>
 
-<script src="<?php echo get_bloginfo('template_url') ?>/design/dist/js/app.js"></script>
+<?php wp_enqueue_script('cds-wp-theme'); ?>
 <?php wp_footer() ?>
