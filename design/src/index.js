@@ -11,6 +11,7 @@ import './scss/pagination.scss'
 import './scss/accordion.scss'
 import './scss/projects.scss'
 import './scss/services.scss'
+import './scss/articles.scss'
 
 /* JS */
 import './js/modal.js'

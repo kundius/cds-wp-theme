@@ -44,7 +44,7 @@ Template Name: Услуга
                   <?php endforeach; ?>
                 </ul>
                 <div class="service-includes__request">
-                  <button class="ui-button-secondary" data-micromodal-trigger="modal-service">Заказать услугу</button>
+                  <button class="ui-button-secondary" data-micromodal-trigger="modal-callback">Заказать услугу</button>
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ Template Name: Услуга
         </div>
         <?php endif; ?>
 
-        <div class="section-page__content">
+        <div class="section-page__content content">
           <?php the_content() ?>
         </div>
       </div>

@@ -7,8 +7,7 @@ require_once(__DIR__ . '/includes/ajax.php');
 
 add_action('after_setup_theme', function() {
   register_nav_menus([
-    'main' => 'Основное меню',
-    // 'sitemap' => 'Карта сайта'
+    'main' => 'Основное меню'
   ]);
 });
 
@@ -28,3 +27,8 @@ add_filter('navigation_markup_template', 'navigation_template', 10, 2);
 function navigation_template ($template, $class) {
   return '<nav class="%1$s" role="navigation"><div class="nav-links">%3$s</div></nav>';
 }
+
+function new_excerpt_length ($length){
+  return 10;
+}
+add_filter('excerpt_length', 'new_excerpt_length');

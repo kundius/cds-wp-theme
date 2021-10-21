@@ -17,7 +17,7 @@
       <div class="accordion-item__content">
         <?php echo $item['content'] ?>
         <div class="accordion-item__collapse">
-          <button type="button">Свернуть</button>
+          <button type="button" class="ui-button-thirdy ui-button-thirdy_slide-up">Свернуть</button>
         </div>
       </div>
     </div>

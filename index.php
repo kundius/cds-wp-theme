@@ -16,7 +16,7 @@
       <div class="ui-container">
         <h1 class="section-page__title"><?php the_title() ?></h1>
 
-        <div class="section-page__content">
+        <div class="section-page__content content">
           <?php the_content() ?>
         </div>
       </div>

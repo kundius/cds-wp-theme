@@ -65,6 +65,9 @@
   .modal_wide & {
     width: 820px;
   }
+  .modal_medium & {
+    width: 720px;
+  }
   @media (max-width: $breakpoint-xsmall-max) {
     width: 100%;
     height: 100%;

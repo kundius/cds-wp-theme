@@ -18,7 +18,7 @@ Template Name: Главная
           груза
         </div>
         <div class="intro__submit-block">
-          <button class="ui-button-primary" data-micromodal-trigger="modal-callback">Узнать как оформить</button>
+          <a href="<?php the_permalink(204) ?>" class="ui-button-primary">Узнать как оформить</a>
         </div>
       </div>
     </section>
@@ -180,7 +180,7 @@ Template Name: Главная
         </div>
 
         <div class="home-procedure__send">
-          <button class="ui-button-primary ui-button-primary_small" data-micromodal-trigger="modal-request">
+          <button class="ui-button-primary ui-button-primary_small" data-micromodal-trigger="modal-callback">
             Отправить заявку
           </button>
         </div>
