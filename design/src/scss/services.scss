@@ -1,0 +1,149 @@
+@import 'variables';
+
+.block-services {
+  margin: 0 -15px;
+  * + & {
+    margin-top: 60px;
+  }
+}
+
+.block-services__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -4px;
+  margin-top: -4px;
+}
+
+.block-services__items-row {
+  width: 25%;
+  padding-left: 4px;
+  padding-top: 4px;
+  display: flex;
+  @media (max-width: $breakpoint-small-max) {
+    width: 50%;
+  }
+}
+
+.service-details {
+  margin-bottom: 112px;
+  margin-top: 84px;
+  @media (max-width: $breakpoint-xsmall-max) {
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+}
+
+.service-details__grid {
+  display: flex;
+  margin-left: -60px;
+  margin-top: -60px;
+  flex-wrap: wrap;
+}
+
+.service-details__grid-left {
+  width: 50%;
+  padding-left: 60px;
+  padding-top: 60px;
+  @media (max-width: $breakpoint-small-max) {
+    width: 100%;
+  }
+}
+
+.service-details__grid-right {
+  width: 50%;
+  padding-left: 60px;
+  padding-top: 60px;
+  @media (max-width: $breakpoint-small-max) {
+    width: 100%;
+  }
+}
+
+.service-details__thumbnail {
+  display: flex;
+  justify-content: center;
+  img {
+    display: block;
+    box-shadow: 0px 0px 27.26px 1.74px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.service-includes {
+  
+}
+
+.service-includes__title {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1;
+  color: #222;
+  margin-bottom: 55px;
+  @media (max-width: $breakpoint-xsmall-max) {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+.service-includes__list {
+  margin: 0 3px;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #222;
+  font-weight: 700;
+  @media (max-width: $breakpoint-xsmall-max) {
+    margin: 0;
+  }
+  li {
+    position: relative;
+    padding-left: 42px;
+    margin: 24px 0;
+    @media (max-width: $breakpoint-xsmall-max) {
+      padding-left: 30px;
+      margin: 20px 0;
+    }
+    &::before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      background: #325bf4;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: -6px;
+      @media (max-width: $breakpoint-xsmall-max) {
+        width: 20px;
+        height: 20px;
+        left: 0;
+        top: -1px;
+      }
+    }
+    &::after {
+      content: '';
+      width: 16px;
+      height: 8px;
+      border-left: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      transform: rotate(-45deg);
+      position: absolute;
+      left: 8px;
+      top: 4px;
+      @media (max-width: $breakpoint-xsmall-max) {
+        width: 12px;
+        height: 6px;
+        left: 5px;
+        top: 5px;
+      }
+    }
+  }
+}
+
+.service-includes__request {
+  display: flex;
+  justify-content: center;
+  margin-top: 43px;
+  button {
+    width: 330px;
+    max-width: 100%;
+  }
+}

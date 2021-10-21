@@ -157,23 +157,6 @@
   }
 }
 
-.home-services__items {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -4px;
-  margin-top: -4px;
-}
-
-.home-services__items-row {
-  width: 25%;
-  padding-left: 4px;
-  padding-top: 4px;
-  display: flex;
-  @media (max-width: $breakpoint-small-max) {
-    width: 50%;
-  }
-}
-
 .section-term {
   background: #24315e url('../images/design/home-term.png') no-repeat calc(50% - 85px) calc(100% + 65px);
   font-size: 42px;

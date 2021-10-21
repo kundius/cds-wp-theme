@@ -52,7 +52,7 @@
 }
 
 .modal__container {
-  border-width: 1px solid rgb(195, 198, 208);
+  border: 1px solid rgb(195, 198, 208);
   background-color: rgb(255, 255, 255);
   box-shadow: -19.184px 8.541px 27px 0px rgba(0, 0, 0, 0.1);
   padding: 50px 68px 58px;
@@ -62,6 +62,9 @@
   box-sizing: border-box;
   position: relative;
   overflow: auto;
+  .modal_wide & {
+    width: 820px;
+  }
   @media (max-width: $breakpoint-xsmall-max) {
     width: 100%;
     height: 100%;
@@ -90,16 +93,6 @@
   background: transparent;
   z-index: 2;
   padding: 0;
-  /* @include below(medium) {
-    top: 2px;
-    right: 2px;
-  }
-  @include below(small) {
-    top: 2px;
-    right: 2px;
-    width: 32px;
-    height: 32px;
-  } */
 }
 
 .modal__close::before {
@@ -111,10 +104,6 @@
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
   background: #b6b6b6;
-  /* @include below(small) {
-    height: 2px;
-    width: 18px;
-  } */
 }
 
 .modal__close::after {
@@ -126,10 +115,6 @@
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
   background: #b6b6b6;
-  /* @include below(small) {
-    height: 2px;
-    width: 18px;
-  } */
 }
 
 .modal__close:hover {
@@ -152,6 +137,9 @@
   position: relative;
   text-align: center;
   margin-bottom: 40px;
+  .modal_wide & {
+    margin-bottom: 60px;
+  }
 }
 
 .modal__title::after {

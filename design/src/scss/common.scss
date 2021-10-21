@@ -178,6 +178,8 @@ img {
   z-index: 1;
   padding: 42px 8px 28px;
   width: 100%;
+  display: block;
+  text-decoration: none;
   @media (max-width: $breakpoint-xsmall-max) {
     padding-top: 17px;
     padding-bottom: 8px;
@@ -247,6 +249,7 @@ img {
   font-weight: 800;
   min-height: 3.6em;
   margin-top: 5px;
+  display: block;
   @media (max-width: $breakpoint-medium-max) {
     font-size: 20px;
   }
@@ -300,25 +303,12 @@ img {
 }
 
 .request-form {
-  background-color: rgb(252, 252, 252);
-  box-shadow: 0px 0px 27.26px 1.74px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-wrap: wrap;
-  padding-left: 88px;
-  padding-right: 88px;
-  padding-top: 54px;
-  padding-bottom: 62px;
   align-items: flex-start;
-  @media (max-width: $breakpoint-small-max) {
-    padding: 20px;
-  }
   @media (max-width: $breakpoint-xsmall-max) {
     font-size: 13px;
     line-height: 12px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 37px;
-    padding-bottom: 23px;
     flex-direction: column;
   }
 }
@@ -1218,6 +1208,11 @@ img {
     // margin-bottom: 40px;
     padding: 0;
   }
+  @media (max-width: 599px) {
+    .wp-block-column + .wp-block-column {
+      margin-top: 2em;
+    }
+  }
 }
 
 .hf-message {
@@ -1288,7 +1283,20 @@ img {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  background-color: rgb(252, 252, 252);
+  box-shadow: 0px 0px 27.26px 1.74px rgba(0, 0, 0, 0.25);
+  padding-left: 88px;
+  padding-right: 88px;
+  padding-top: 54px;
+  padding-bottom: 62px;
+  @media (max-width: $breakpoint-small-max) {
+    padding: 20px;
+  }
   @media (max-width: $breakpoint-xsmall-max) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 37px;
+    padding-bottom: 23px;
     margin-bottom: 5px;
     margin-left: -15px;
     margin-right: -15px;

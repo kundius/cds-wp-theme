@@ -68,5 +68,43 @@
   </div>
 </div>
 
+<div class="modal modal_wide micromodal-slide" id="modal-service" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div
+      class="modal__container"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-callback-title"
+    >
+      <button
+        class="modal__close"
+        aria-label="Close modal"
+        data-micromodal-close
+      ></button>
+      <div class="modal__title">Заказать услугу</div>
+      <?php echo do_shortcode('[hf_form slug="zakazat-uslugu"]') ?>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_wide micromodal-slide" id="modal-request" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div
+      class="modal__container"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-callback-title"
+    >
+      <button
+        class="modal__close"
+        aria-label="Close modal"
+        data-micromodal-close
+      ></button>
+      <div class="modal__title">Заказать расчет</div>
+      <?php echo do_shortcode('[hf_form slug="zakazat-raschet"]') ?>
+    </div>
+  </div>
+</div>
+
 <?php wp_enqueue_script('cds-wp-theme'); ?>
 <?php wp_footer() ?>
