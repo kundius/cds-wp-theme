@@ -14,6 +14,7 @@
   min-height: 100vh;
   @media (max-width: $breakpoint-large-max) {
     padding-top: 113px + 74px;
+    min-height: 80vh;
   }
   @media (max-width: $breakpoint-medium-max) {
     padding-top: 113px + 68px;
@@ -52,7 +53,7 @@
   margin-left: 16px;
   max-width: 80%;
   @media (max-width: $breakpoint-large-max) {
-    font-size: 54px;
+    font-size: 44px;
     margin-left: 8px;
   }
   @media (max-width: $breakpoint-small-max) {
