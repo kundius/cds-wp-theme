@@ -159,7 +159,7 @@ body.logged-in.admin-bar .header {
   // @media (max-width: $breakpoint-large-max) {
   //   font-size: 32px;
   // }
-  @media (max-width: $breakpoint-medium-max) {
+  @media (max-width: $breakpoint-large-max) {
     font-size: 28px;
   }
   @media (max-width: $breakpoint-small-max) {
@@ -171,7 +171,7 @@ body.logged-in.admin-bar .header {
   display: block;
   width: 62px;
   height: 50px;
-  @media (max-width: $breakpoint-medium-max) {
+  @media (max-width: $breakpoint-large-max) {
     width: 42px;
     height: 33px;
   }
@@ -184,7 +184,7 @@ body.logged-in.admin-bar .header {
   white-space: nowrap;
   margin-top: 8px;
   margin-left: 20px;
-  @media (max-width: $breakpoint-medium-max) {
+  @media (max-width: $breakpoint-large-max) {
     font-size: 10px;
     margin-left: 0;
   }
@@ -255,10 +255,16 @@ body.logged-in.admin-bar .header {
 
 .header-menu > ul > li {
   margin: 0 32px;
-  @media (max-width: $breakpoint-large-max - math.div($breakpoint-step, 2)) {
+  // @media (max-width: $breakpoint-large-max - math.div($breakpoint-step, 2)) {
+  //   margin: 0 24px;
+  // }
+  // @media (max-width: $breakpoint-medium-max - math.div($breakpoint-step, 2)) {
+  //   margin: 0 16px;
+  // }
+  @media (max-width: $breakpoint-large-max) {
     margin: 0 24px;
   }
-  @media (max-width: $breakpoint-medium-max - math.div($breakpoint-step, 2)) {
+  @media (max-width: $breakpoint-medium-max) {
     margin: 0 16px;
   }
 }
@@ -275,17 +281,21 @@ body.logged-in.admin-bar .header {
   // padding: 28px 30px;
   padding: 0;
   text-decoration: none;
-  @media (max-width: $breakpoint-large-max - math.div($breakpoint-step, 2)) {
-    font-size: 22px;
+  // @media (max-width: $breakpoint-large-max - math.div($breakpoint-step, 2)) {
+  //   font-size: 22px;
+  //   // padding: 24px;
+  // }
+  @media (max-width: $breakpoint-large-max) {
+    font-size: 18px;
     // padding: 24px;
   }
   @media (max-width: $breakpoint-medium-max) {
-    font-size: 20px;
+    font-size: 16px;
   }
-  @media (max-width: $breakpoint-medium-max - math.div($breakpoint-step, 2)) {
-    // padding: 16px;
-    font-size: 18px;
-  }
+  // @media (max-width: $breakpoint-medium-max - math.div($breakpoint-step, 2)) {
+  //   // padding: 16px;
+  //   font-size: 18px;
+  // }
 }
 
 .header-menu > ul > li.menu-item-has-children {
@@ -304,7 +314,7 @@ body.logged-in.admin-bar .header {
   transition-property: border-bottom-color, border-left-color;
   margin-left: 8px;
   margin-right: -8px;
-  @media (max-width: $breakpoint-medium-max) {
+  @media (max-width: $breakpoint-large-max) {
     margin-left: 6px;
     margin-right: -6px;
     width: 6px;
