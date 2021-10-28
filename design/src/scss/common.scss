@@ -1236,6 +1236,9 @@ img {
   // letter-spacing: -0.025em;
   margin: 0;
   margin-bottom: 55px;
+  @media (max-width: $breakpoint-large-max) {
+    font-size: 54px;
+  }
   @media (max-width: $breakpoint-small-max) {
     font-size: 48px;
     margin-bottom: 48px;
