@@ -255,16 +255,16 @@ body.logged-in.admin-bar .header {
 
 .header-menu > ul > li {
   margin: 0 32px;
-  // @media (max-width: $breakpoint-large-max - math.div($breakpoint-step, 2)) {
-  //   margin: 0 24px;
-  // }
+  @media (max-width: $breakpoint-large-max - math.div($breakpoint-step, 2)) {
+    margin: 0 24px;
+  }
   // @media (max-width: $breakpoint-medium-max - math.div($breakpoint-step, 2)) {
   //   margin: 0 16px;
   // }
-  @media (max-width: $breakpoint-large-max) {
-    margin: 0 24px;
-  }
-  @media (max-width: $breakpoint-medium-max) {
+  // @media (max-width: $breakpoint-large-max) {
+  //   margin: 0 24px;
+  // }
+  @media (max-width: $breakpoint-medium-max - math.div($breakpoint-step, 2)) {
     margin: 0 16px;
   }
 }
