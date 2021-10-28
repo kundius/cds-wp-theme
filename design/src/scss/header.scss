@@ -463,6 +463,9 @@ body.logged-in.admin-bar .header {
   margin-top: 1px;
   margin-bottom: 1px;
   @media (max-width: $breakpoint-large-max) {
+    margin-right: 14px;
+  }
+  @media (max-width: $breakpoint-medium-max) {
     display: none;
   }
 }
@@ -480,6 +483,9 @@ body.logged-in.admin-bar .header {
   letter-spacing: 0.025em;
   text-decoration: none;
   white-space: nowrap;
+  @media (max-width: $breakpoint-large-max) {
+    font-size: 15px;
+  }
 }
 
 .header-contacts__phone + .header-contacts__phone {
@@ -494,6 +500,10 @@ body.logged-in.admin-bar .header {
   align-items: center;
   letter-spacing: 0.22em;
   margin-top: 9px;
+  @media (max-width: $breakpoint-large-max) {
+    font-size: 9px;
+    margin-top: 5px;
+  }
 }
 
 .header-contacts__email svg {
@@ -521,7 +531,7 @@ body.logged-in.admin-bar .header {
   justify-content: center;
   transition: .3s ease-in;
   transition-property: background-color, box-shadow;
-  @media (max-width: $breakpoint-medium-max) {
+  @media (max-width: $breakpoint-large-max) {
     width: 48px;
     height: 48px;
   }
