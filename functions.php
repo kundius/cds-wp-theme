@@ -32,3 +32,14 @@ function new_excerpt_length ($length){
   return 10;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
+
+function is_new_year()
+{
+  if (date('m') === '12' && date('d') >= '20') {
+    return true;
+  }
+  if (date('m') === '01' && date('d') <= '10') {
+    return true;
+  }
+  return false;
+}

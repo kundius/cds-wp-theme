@@ -64,6 +64,7 @@ body.logged-in.admin-bar .header {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
+  position: relative;
   @media (max-width: $breakpoint-small-max) {
     align-items: flex-start;
   }
@@ -553,4 +554,43 @@ body.logged-in.admin-bar .header {
 .header-contacts__callback:hover {
   background-color: rgb(229, 18, 69);
   box-shadow: 1.871px 8.803px 16px 0px rgba(255, 20, 77, 0.5);  
+}
+
+.header_new_year_left_top_2 {
+  background: url("../images/ng-left-top-1-red.png") no-repeat 50% 50%;
+  width: 428px;
+  height: 518px;
+  position: absolute;
+  top: -10px;
+  left: -320px;
+  pointer-events: none;
+  z-index: -1;
+  @media (max-width: 479px) {
+    left: -320px;
+  }
+}
+
+.header_new_year_right_top_2 {
+  background: url("../images/ng-right-top-1.png") no-repeat;
+  width: 398px;
+  height: 126px;
+  position: absolute;
+  top: -10px;
+  right: -130px;
+  pointer-events: none;
+  z-index: -1;
+  @media (max-width: 479px) {
+    right: -280px;
+  }
+}
+
+.header_new_year_middle_top_1 {
+  background: url("../images/ng-middle-top-1.png") no-repeat;
+  height: 42px;
+  position: absolute;
+  pointer-events: none;
+  left: 50%;
+  top: -10px;
+  width: 133px;
+  transform: translateX(-50%);
 }

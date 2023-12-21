@@ -47,6 +47,12 @@
 
 <header class="header header_intro">
   <div class="header__container">
+    <?php if (is_new_year()): ?>
+    <div class="header_new_year_left_top_2"></div>
+    <div class="header_new_year_right_top_2"></div>
+    <div class="header_new_year_middle_top_1"></div>
+    <?php endif; ?>
+
     <button class="header-toggle js-drawer-toggle">
       <span></span><span></span><span></span>
     </button>
