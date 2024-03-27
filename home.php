@@ -54,7 +54,7 @@ Template Name: Главная
           Что такое крупногабаритное транспортное средство:
         </div>
         <div class="home-about__figure">
-          <div class="home-about__figure-image"></div>
+          <div class="home-about__figure-image" style="background-image: url('/wp-content/uploads/2024/03/imgpsh_fullsize_anim.png')"></div>
           <div class="home-about__figure-desc">
             <p>
               <span>*</span> - предельно допустимые осевые нагрузки зависят
