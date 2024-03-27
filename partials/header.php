@@ -34,7 +34,7 @@
       <div class="drawer__contacts">
         <div class="drawer__phones">
           <a href="tel:+7 (905) 650-27-17">+7 (905) 650-27-17</a>
-          <a href="tel:+7 (473) 255-34-49">+7 (473) 255-34-49</a>
+          <a href="tel:+7 (473) 255-34-46">+7 (473) 255-34-46</a>
         </div>
         <div class="drawer__time">
           Пн-Пт: с 9:00 до 18:00<br />
@@ -97,7 +97,7 @@
       <div class="header-contacts__phones_and_email">
         <div class="header-contacts__phones">
           <a href="tel:+7 (905) 650-27-17" class="header-contacts__phone">+7 (905) 650-27-17</a>
-          <a href="tel:+7 (473) 255-34-49" class="header-contacts__phone">+7 (473) 255-34-49</a>
+          <a href="tel:+7 (473) 255-34-46" class="header-contacts__phone">+7 (473) 255-34-46</a>
         </div>
         <a href="#" class="header-contacts__email">
           <svg viewBox="0 0 13 10">
