@@ -367,15 +367,15 @@
 }
 
 .section-guarantee {
-  padding-top: 160px;
+  padding-top: 120px;
   padding-bottom: 80px;
   @media (max-width: $breakpoint-small-max) {
-    padding-top: 120px;
-    padding-bottom: 90px;    
+    padding-top: 100px;
+    padding-bottom: 60px;    
   }
   @media (max-width: $breakpoint-xsmall-max) {
-    padding-top: 47px;
-    padding-bottom: 66px;
+    padding-top: 60px;
+    padding-bottom: 40px;
   }
 }
 
@@ -417,12 +417,12 @@
   padding-top: 80px;
   padding-bottom: 120px;
   @media (max-width: $breakpoint-small-max) {
-    padding-top: 120px;
-    padding-bottom: 90px;    
+    padding-top: 60px;
+    padding-bottom: 100px;    
   }
   @media (max-width: $breakpoint-xsmall-max) {
-    padding-top: 47px;
-    padding-bottom: 66px;
+    padding-top: 40px;
+    padding-bottom: 60px;
   }
 }
 
