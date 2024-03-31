@@ -11,7 +11,7 @@ $news_query_params = [
   'tax_query' => [
     'relation' => 'OR',
     [
-			'taxonomy' => $category->taxonomy,
+			'taxonomy' => 'category',
 			'field' => 'id',
 			'terms' => [$news_cat_id]
     ]
