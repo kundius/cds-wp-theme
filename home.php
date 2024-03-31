@@ -148,10 +148,7 @@ $news_query = new WP_Query($news_query_params);
     <?php if ($news_query->have_posts()): ?>
     <section class="section-news">
       <div class="ui-container">
-        <div class="section-news__headline">
-          <div class="section-news__title">Наши новости</div>
-          <a href="<?php echo get_category_link($news_cat_id) ?>" class="section-news__all">Смотреть все</a>
-        </div>
+        <div class="section-news__title">Наши новости</div>
         <div class="section-news__grid">
           <?php foreach ($news_query->posts as $item): ?>
           <div class="section-news__grid-cell">
@@ -181,6 +178,9 @@ $news_query = new WP_Query($news_query_params);
             </div>
           </div>
           <?php endforeach; ?>
+        </div>
+        <div class="section-news__all">
+          <a href="<?php echo get_category_link($news_cat_id) ?>" class="ui-button-secondary">Смотреть все</a>
         </div>
       </div>
     </section>
