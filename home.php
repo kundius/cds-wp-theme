@@ -2,6 +2,22 @@
 /*
 Template Name: Главная
 */
+$news_cat_id = 3;
+$news_query_params = [
+  'post_type' => 'post',
+  'posts_per_page' => 2,
+  'order' => 'DESC',
+  'orderby' => 'date',
+  'tax_query' => [
+    'relation' => 'OR',
+    [
+			'taxonomy' => $category->taxonomy,
+			'field' => 'id',
+			'terms' => [$news_cat_id]
+    ]
+  ]
+];
+$news_query = new WP_Query($news_query_params);
 ?>
 <!DOCTYPE html>
 <html lang="ru" itemscope itemtype="http://schema.org/WebSite">
@@ -120,6 +136,47 @@ Template Name: Главная
               </div>
               <div class="card-secondary__desc">
                 <?php echo $row['description'] ?>
+              </div>
+            </div>
+          </div>
+          <?php endforeach; ?>
+        </div>
+      </div>
+    </section>
+    <?php endif; ?>
+
+    <?php if ($news_query->have_posts()): ?>
+    <section class="section-news">
+      <div class="ui-container">
+        <div class="section-news__headline">
+          <div class="section-news__title">Наши новости</div>
+          <a href="<?php echo get_category_link($news_cat_id) ?>" class="section-news__all">Смотреть все</a>
+        </div>
+        <div class="section-news__grid">
+          <?php foreach ($news_query->posts as $item): ?>
+          <div class="section-news__grid-cell">
+            <div class="articles-item">
+              <?php if ($thumbnail = get_the_post_thumbnail($item, 'w200h240')): ?>
+              <div class="articles-item__image">
+                <a href="<?php the_permalink($item->ID) ?>">
+                  <?php echo $thumbnail ?>
+                </a>
+              </div>
+              <?php endif; ?>
+              <div class="articles-item__body">
+                <div class="articles-item__date">
+                  <?php echo get_the_date('d.m.Y', $item) ?>
+                </div>
+                <div class="articles-item__title">
+                  <a href="<?php the_permalink($item->ID) ?>">
+                    <?php echo get_the_title($item) ?>
+                  </a>
+                </div>
+                <?php if ($excerpt = get_the_excerpt($item)): ?>
+                  <div class="articles-item__desc">
+                    <?php echo $excerpt ?>
+                  </div>
+                <?php endif; ?>
               </div>
             </div>
           </div>
